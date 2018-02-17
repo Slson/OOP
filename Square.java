@@ -1,5 +1,6 @@
 package oop2hometask1;
-    public class Square extends Shape {
+
+public class Square extends Shape {
 
     private Point a;
     private Point b;
@@ -15,16 +16,18 @@ package oop2hometask1;
 
     public Square() {
     }
+
     @Override
- public double getPerimetr(){
-     double perimetr=getA().length(getA(), getB())*4;
-     return perimetr;
- }
- @Override
- public double getArea (){
-     double area=Math.pow(getA().length(getA(), getB()),2);
-     return area;
- }
+    public double getPerimetr() {
+        double perimetr = getA().length(getA(), getB()) * 4;
+        return perimetr;
+    }
+
+    @Override
+    public double getArea() {
+        double area = Math.pow(getA().length(getA(), getB()), 2);
+        return area;
+    }
 
     public Point getA() {
         return a;
@@ -62,7 +65,5 @@ package oop2hometask1;
     public String toString() {
         return "Square{" + "a=" + a + ", b=" + b + ", c=" + c + ", d=" + d + '}';
     }
-         
-
 
 }
