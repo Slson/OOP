@@ -14,7 +14,7 @@ public class FileChecker implements Runnable {
 
     @Override
     public void run() {
-        for (; !Thread.currentThread().isInterrupted();) {
+//         for (; !Thread.currentThread().isInterrupted();) {
             File directoryToCheckFile = new File(directoryToCheckString);
             for (; !Thread.currentThread().isInterrupted();) {
                 File[] fileArray = directoryToCheckFile.listFiles();
@@ -33,7 +33,7 @@ public class FileChecker implements Runnable {
                 catch (Exception e) {
                 }
             }
-        }
+//         }
     }
 
 }
